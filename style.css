@@ -2,3 +2,14 @@
 	text-align: center;
 	font-size: 60px;
 }
+
+img{
+    height: 15px;
+    width: 15px;
+    transition: 1s;
+}
+
+img:hover{
+    height: 450px;
+    width: 450px;
+}
