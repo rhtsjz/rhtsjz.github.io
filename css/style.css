@@ -4,13 +4,13 @@
 }
 
 img{
-    height: 50px;
+    height: 141px;
     width: 80px;
     transition: 1s;
 }
 
 img:hover{
-    height: 200px;
+    height: 525px;
     width: 320px;
 }
 
