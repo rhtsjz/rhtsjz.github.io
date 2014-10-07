@@ -42,19 +42,16 @@
             <div class="inner">
               <h3 class="masthead-brand">Timer</h3>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="http://zhentou.github.io/">Count Down</a></li>
+                <li class="active"><a href="http://zhentou.github.io/">Timer</a></li>
                 <li><a href="http://zhentou.github.io/timer.html">Timer</a></li>
               </ul>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Count Down</h1>
+            <h1 class="cover-heading">Timer</h1>
             <p class="lead digit">
               ! Guess !
-            </p>
-            <p class="lead">
-              Day
             </p>
             <p class="lead">
               <img src="./image/cat.gif">
@@ -63,7 +60,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Count Down by <a href="https://twitter.com/zhentousmile">@ShiJun Zhang</a>.</p>
+              <p>Timer by <a href="https://twitter.com/zhentousmile">@ShiJun Zhang</a>.</p>
             </div>
           </div>
 
@@ -87,9 +84,9 @@
 
 <script type="text/javascript">
     setInterval(function() {
-      var back = new Date(2014, 11, 1);
+      var start = new Date(2014, 5, 16);
       var now = new Date();
-      var day = Math.floor((back.getTime() - now.getTime())/(60000*60*24))
+      var day = Math.floor((now.getTime() - start.getTime())/(60000*60*24))
       document.getElementsByClassName("digit")[0].innerHTML = day;
     }, 1000);
     
