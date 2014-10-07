@@ -13,7 +13,7 @@
         <p>倒计时</p>
       </div>
       <div class="content">
-        <div class="digit">
+        <div class="digit"
           你猜
         </div>
         <div class="unit">
@@ -27,7 +27,7 @@
   </body>
   <script type="text/javascript">
     setInterval(function() {
-      var back = new Date(2014, 8, 18);
+      var back = new Date(2014, 11, 1);
       var now = new Date();
       var day = Math.floor((back.getTime() - now.getTime())/(60000*60*24))
       document.getElementsByClassName("digit")[0].innerHTML = day;
