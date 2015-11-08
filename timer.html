@@ -98,7 +98,7 @@
     
     var click_num = 0;
     $(".img-us").on("click", function() {
-        var image_index = click_num % 2;
+        var image_index = click_num % 3;
         var image_src = "./image/us_" + image_index + ".jpg";
         $(".img-us") .attr("src", image_src);
         click_num ++;
