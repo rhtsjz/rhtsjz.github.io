@@ -94,7 +94,15 @@
       var now = new Date();
       var day = Math.floor((now.getTime() - start.getTime())/(60000*60*24))
       document.getElementsByClassName("digit")[0].innerHTML = day;
-    }, 1000);
+    }, 1000*60*60);
+    
+    var click_num = 0;
+    $(".img-us").on("click", function() {
+        var image_index = click_num % 2;
+        var image_src = "./image/us_" + image_index + ".jpg";
+        $(".img-us") .attr("src", image_src);
+        click_num ++;
+    });
     
 </script>
 
