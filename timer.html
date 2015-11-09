@@ -60,7 +60,9 @@
               Day
             </p>
             <p class="lead">
-              <img class="img-us" src="./image/us_0.jpg">
+              <img class="img-us img-us-0" src="./image/us_0.jpg">
+              <img class="img-us img-us-1" src="./image/us_1.jpg" style="display:none;">
+              <img class="img-us img-us-2" src="./image/us_2.jpg" style="display:none;">
             </p>
           </div>
 
@@ -99,11 +101,10 @@
     var click_num = 0;
     $(".img-us").on("click", function() {
         var image_index = click_num % 3;
-        var image_src = "./image/us_" + image_index + ".jpg";
-        $(".img-us") .attr("src", image_src);
+        $(".img-us").hide();
+        $(".img-us_"+image_index).show();
         click_num ++;
     });
-    
 </script>
 
 </html>
