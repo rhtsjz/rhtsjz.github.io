@@ -92,7 +92,8 @@
 
 <script type="text/javascript">
     setInterval(function() {
-      var start = new Date(2014, 5, 16);
+      //var start = new Date(2014, 5, 16);
+      var start = new Date("2037-06-07");
       var now = new Date();
       var day = Math.floor((now.getTime() - start.getTime())/(60000*60*24))
       document.getElementsByClassName("digit")[0].innerHTML = day;
